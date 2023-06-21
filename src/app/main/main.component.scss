@@ -1,0 +1,237 @@
+.container {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 160px;
+  margin-right: 160px;
+  height: 80vh;
+  .text-button-section {
+    width: 53%;
+    h1 {
+      color: var(--Very-Dark-Blue);
+      font-weight: 700;
+      font-size: 72px;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    p {
+      color: var(--Grayish-Violet);
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    button {
+      padding: 10px 30px;
+      font-weight: 700;
+      border: 0;
+      border-radius: 20px;
+      background-color: var(--Cyan);
+      color: white;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .img-section {
+    width: 40%;
+    height: auto;
+
+    img {
+      height: 380px;
+    }
+  }
+}
+.detail-section {
+  background-color: hsl(230, 25%, 95%);
+  height: 600px;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  min-height: 155vh;
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    color: var(--Very-Dark-Blue);
+  }
+  p {
+    text-align: center;
+    color: var(--Grayish-Violet);
+  }
+  .stat-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-left: 160px;
+    padding-right: 160px;
+    gap: 30px;
+    .circle {
+      background-color: var(--Dark-Violet);
+      width: fit-content;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: -280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      padding: 20px;
+    }
+    .stat-one {
+      padding: 70px 20px 40px 20px;
+      width: 860px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      z-index: 1;
+      h1 {
+        font-size: 23px;
+      }
+      p {
+        padding-top: 15px;
+        font-size: 15px;
+        text-align: left;
+      }
+    }
+    .stat-two {
+      padding: 70px 20px 40px 20px;
+
+      background-color: white;
+      display: flex;
+      width: 860px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      transform: translateY(50px);
+      // margin-top: 40px;
+      h1 {
+        font-size: 23px;
+      }
+      p {
+        padding-top: 15px;
+        font-size: 15px;
+        text-align: left;
+      }
+    }
+    .stat-three {
+      padding: 70px 20px 40px 20px;
+      background-color: white;
+      display: flex;
+      width: 860px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      transform: translateY(100px);
+      h1 {
+        font-size: 23px;
+      }
+      p {
+        padding-top: 15px;
+        font-size: 15px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.ads-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  min-height: 40vh;
+  background-color: var(--Dark-Violet);
+  background-image: url(/assets/bg-boost-desktop.svg);
+
+  h1 {
+    color: white;
+    font-weight: 700;
+  }
+  button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 20px;
+    background-color: var(--Cyan);
+    color: white;
+  }
+
+  button:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  background-color: var(--Very-Dark-Violet);
+  bottom: 0;
+  height: 35vh;
+  display: flex;
+  svg path {
+    fill: white;
+  }
+  .row {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+  .column {
+    flex: 1;
+    padding: 10px;
+    .space {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+  }
+  p {
+    margin-top: 0;
+    color: white;
+    font-weight: 700;
+  }
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    a {
+      color: var(--Grayish-Violet);
+      font-weight: 100;
+      font-size: 12px;
+    }
+  }
+  svg path:hover {
+    fill: var(--Cyan);
+    cursor: pointer;
+  }
+  ul li a:hover,
+  .col-4 a:hover {
+    color: var(--Cyan);
+  }
+
+  .spacebetween {
+    justify-content: space-between;
+  }
+}

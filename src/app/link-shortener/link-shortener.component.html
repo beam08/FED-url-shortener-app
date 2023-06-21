@@ -1,0 +1,29 @@
+<div class="link-shortener">
+  <div class="input-con">
+    <input
+      type="text"
+      [(ngModel)]="txtLink"
+      placeholder="Shorten a link here..."
+    />
+    <small *ngIf="!isValid">Please add a link</small>
+  </div>
+  <button (click)="shorten()">Shorten It!</button>
+</div>
+
+<div class="container">
+  <ul class="link-list">
+    <li *ngFor="let link of links.slice(0, 3)" class="list">
+      <div class="link">{{ link.longLink }}</div>
+      <div class="short-link">
+        {{ link.shortLink
+        }}<button
+          [ngClass]="btnClicked ? 'btn-clicked' : 'btn-default'"
+          (click)="copy(link)"
+        >
+          {{ btnVal }}
+        </button>
+      </div>
+    </li>
+  </ul>
+  <small *ngIf="count > 3"><a href="">See More...</a></small>
+</div>
